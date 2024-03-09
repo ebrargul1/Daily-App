@@ -1,11 +1,11 @@
 # Daily-App
-<p> <b>Proje Tanımı:</b> foodDB adlı yemek sipariş sitemiz, kullanıcıları ve restoranları doğrudan bir araya getirmek için tasarlanmıştır.Piyasadaki diğer yemek sipariş platformlarının aksine, aracı kurum olmadan kullanıcıları ve restoranları buluşturmayı amaçlamaktadır. Bu yaklaşım, yüksek komisyon ücretlerini ortadan kaldırarak kullanıcıların daha uygun fiyatlarla yemek siparişi vermelerini sağlarken, restoranların da aracı kuruluşlara komisyon ödemeden ürünlerini sergilemelerine imkan tanır..<p>
+<p> <b>Proje Tanımı:</b> iOS platformunda kullanıcıların duygusal deneyimlerini günlük tutarak belgeleyebilecekleri bir uygulama geliştirmeyi hedefliyoruz. Kullanıcılar her gününü tarih ve detaylı metin içeriğiyle belgeleyebilecek ve o günün en baskın duygusunu ifade eden bir emoji seçebilecekler. Günlükler iCloud senkronizasyonu ile farklı cihazlar arasında paylaşılabilir ve Face ID ile güvenli bir şekilde korunacaktır. Bu uygulama, kullanıcıların duygusal sağlıklarını desteklemek ve günlük tutma alışkanlıklarını kolaylaştırmak için tasarlanmıştır..<p>
 
-<p><b>Proje Kategorisi:</b> E-Sipariş<p>
+<p><b>Proje Kategorisi:</b> Kişisel Dijital Günlük <p>
 <p><b>Referans Uygulaması:</b><p>
 <p><b>Uygulama adresi:</b><p>
-<p><b>Grup Adı:</b> EFZO<p>
-<p><b>Proje Ekibi:</b> Melike,Funda,Kadir,Oğuzhan<p>
+<p><b>Grup Adı:</b><p>
+<p><b>Proje Ekibi:</b> Ebrar Gül<p>
 
 1.[Proje Planı](Proje-Plani.md)<br>
 2.[Gereksinim Analizi](Gereksinim-Analizi.md)<br>
