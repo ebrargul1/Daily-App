@@ -15,4 +15,4 @@
 6.[Front-End](Front-End.md)<br>
 7.[Back-End](Back-End.md)<br>
 8.[Test](Test.md)<br>
-9.[Geliştirici ve Kullancı Dökümantasyonları](Geliştirici-Ve-Kullanici-Dokumantasyonlari.md)<br>
+9.[Geliştirici ve Kullancı Dökümantasyonları](Geliştirici-Ve-Kullanici-Dokumantasyonlari.md) <br>
