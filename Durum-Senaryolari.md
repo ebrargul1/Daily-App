@@ -1,1 +1,4 @@
-![DurumSenaryoları](Durum_Senaryolari.pdf)
+![DurumSenaryoları][def]
+
+
+[def]: Durum_Senaryolari.pdf
