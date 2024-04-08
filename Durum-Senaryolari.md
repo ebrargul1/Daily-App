@@ -1,0 +1,1 @@
+![DurumSenaryoları](Durum_Senaryolari.pdf)
