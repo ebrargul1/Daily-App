@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  DailyApp
+
+  Created by Ebrar Gül on 9.05.2024.
+  
+*/
+
+"app_title" = "Daily App";
+"edit" = "Edit";
+"add" = "Add";
+"list_tab" = "My Diary";
+"other_tab" = "Settings";
+"diary_title" = "Title";
+"diary_description" = "Description";
+"add_diary" = "Add Diary";
+"emoji" = "Emoji";
+"select_emoji" = "Select Emoji";
+"ok" = "Ok";
+"empty_title_alert" = "Empty Title";
+"empty_title_alert_message" = "Title cannot be empty";
+"app_theme" = "App Theme";
+"preferences" = "Preferances";
+"appearance" = "Theme";
+"default_appearance" = "System";
+"light_appearance" = "Light";
+"dark_appearance" = "Dark";
+"search_bar_placeholder" = "Search";
+"calendar_tab" = "Calendar";
+"are_you_sure_want_to_delete" = "Are you sure want to delete?";
+"delete" = "Delete";
+"cancel" = "Cancel";
+"select_date" = "Select Date";
+"rate_us" = "Review on App Store";
+"feedback" = "Feedback";
+
