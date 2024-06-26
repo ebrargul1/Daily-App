@@ -1,0 +1,45 @@
+/* 
+  Localizable.strings
+  DailyApp
+
+  Created by Ebrar Gül on 9.05.2024.
+  
+*/
+
+"app_title" = "Günlük Uygulaması";
+"edit" = "Düzenle";
+"add" = "Ekle";
+"list_tab" = "Günlüğüm";
+"other_tab" = "Ayarlar";
+"diary_title" = "Başlık";
+"diary_description" = "Bugün Neler Yaptın?";
+"add_diary" = "Günlük Ekle";
+"emoji" = "Emoji";
+"select_emoji" = "Emoji Ekle";
+"ok" = "Tamam";
+"empty_title_alert" = "Başlık Girilmedi";
+"empty_title_alert_message" = "Başlık boş geçilemez";
+"app_theme" = "Uygulama Teması";
+"preferences" = "Seçenekler";
+"appearance" = "Tema";
+"default_appearance" = "Sistem";
+"light_appearance" = "Açık";
+"dark_appearance" = "Koyu";
+"search_bar_placeholder" = "Ara";
+"calendar_tab" = "Takvim";
+"are_you_sure_want_to_delete" = "Silmek istediğine emin misin?";
+"delete" = "Sil";
+"cancel" = "İptal";
+"select_date" = "Tarih Seç";
+"rate_us" = "Bizi App Store'da puanla";
+"feedback" = "Geri Bildirim";
+"send_feedback" = "💬  Görüşlerinizi gönderin";
+"changed_app_theme" = "Uygulama teması değiştirildi";
+"follow_social_media" = "Beni sosyal medyadan takip edin✨";
+"save" = "Kaydet";
+
+
+
+
+
+

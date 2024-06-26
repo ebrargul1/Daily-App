@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "fscalendar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/WenchaoD/FSCalendar.git",
+      "state" : {
+        "revision" : "0fbdec5172fccb90f707472eeaea4ffe095278f6",
+        "version" : "2.8.4"
+      }
+    },
+    {
+      "identity" : "localize-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marmelroy/Localize-Swift.git",
+      "state" : {
+        "revision" : "0aa221fed0512772eaad04171d966b8d77b15212",
+        "version" : "3.2.0"
+      }
+    },
+    {
+      "identity" : "omentextfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kitlangton/OmenTextField.git",
+      "state" : {
+        "revision" : "da87c6568700aa633639e85e159e6fbba73ce28a",
+        "version" : "0.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}
