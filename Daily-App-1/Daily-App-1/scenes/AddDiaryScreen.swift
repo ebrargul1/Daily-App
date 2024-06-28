@@ -20,6 +20,10 @@ struct AddDiaryScreen: View {
     @State var description: String = ""
     @State var emoji: String = ""
     @State var showEmojiView: Bool = false
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    @State private var image: Image? = nil
+
     @Binding var item: Item?
 
     private let itemFormatter: DateFormatter = {
@@ -33,11 +37,11 @@ struct AddDiaryScreen: View {
             Section {
                 DatePicker("select_date", selection: $date, in: ...Date(), displayedComponents: .date)
             }
-
+            
             TextField("diary_title".localized(), text: $title)
-
+            
             OmenTextField("diary_description".localized(), text: $description)
-
+            
             Button {
                 self.showEmojiView = true
             } label: {
@@ -45,7 +49,23 @@ struct AddDiaryScreen: View {
             }.sheet(isPresented: $showEmojiView) {
                 EmojiView(txt: $emoji)
             }
-
+            
+            if let image = image {
+                Section {
+                    GeometryReader { reader in
+                        ZStack {
+                            image
+                                .resizable()
+                                .cornerRadius(8)
+                                .padding(.all, 1)
+                                .frame(width: reader.size.width ,
+                                       height: reader.size.height)
+                                .aspectRatio(contentMode: .fill)
+                        }
+                    }.frame(height: 200)
+                }
+            }
+            
             Section {
                 ZStack {
                     Color.appTheme.opacity(0.25).edgesIgnoringSafeArea(.all)
@@ -69,6 +89,7 @@ struct AddDiaryScreen: View {
                 }
             }.listRowInsets(EdgeInsets())
         }
+        .onChange(of: inputImage) { _ in loadImage() }
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                 if let _item = item {
@@ -76,15 +97,21 @@ struct AddDiaryScreen: View {
                     self.description = _item.detail ?? ""
                     self.title = _item.title ?? ""
                     self.date = _item.timestamp ?? Date()
+                 /*  if let imageData = item?.images?.imageContent {
+                        self.inputImage = UIImage(data: imageData)
+                        self.image = Image(uiImage: self.inputImage!)
+                    }*/
                 }
             }
         }
         .navigationBarItems(trailing:
             HStack {
                 Button {
-                    // PhotoPlusView action
+                    showingImagePicker = true
                 } label: {
                     PhotoPlusView()
+                }.sheet(isPresented: $showingImagePicker) {
+                    ImagePicker(image: $inputImage)
                 }
 
                 Button(action: {
@@ -105,6 +132,11 @@ struct AddDiaryScreen: View {
         )
         .navigationTitle(Text("add_diary".localized()))
     }
+    
+    func loadImage() {
+        guard let _inputImage = inputImage else { return }
+        image = Image(uiImage: _inputImage)
+    }
 
     private func goBack() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
@@ -119,6 +151,13 @@ struct AddDiaryScreen: View {
         } else {
             newItem = Item(context: viewContext)
         }
+        
+       /* if let inputImage = inputImage {
+            let dImage = DImage(context: viewContext)
+           dImage.origin = newItem
+           dImage.imageContent = inputImage.pngData()
+            newItem.addToImages(dImage)
+        } */
 
         withAnimation {
             newItem.timestamp = date
